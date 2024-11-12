@@ -1,26 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <h1>MAQE Homework Challenge</h1>
+    <h3>Candidate : Laphat-rada Wisadsri</h3>
+  </div>
+  <StylesComponent title="CSS Styling" />
+  <TemplateComponent />
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import StylesComponent from "./components/StylesComponent.vue";
+import TemplateComponent from "./components/TemplateComponent.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    StylesComponent,
+    TemplateComponent,
+  },
+};
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
